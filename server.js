@@ -8,7 +8,7 @@ var config={
     databsae: 'harshgar1989',
     host: 'db.imad.hasura-app.io',
     port: '5432',
-    password: process.emv.DB_PASSWORD
+    password: 'db-harshgar1989-69260'
 };
 var app = express();
 app.use(morgan('combined'));
