@@ -1,7 +1,7 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-var Pool=require('pg').Pool;
+var Pool= require('pg').Pool;
 
 var config={
     user: 'harshgar1989', 
@@ -107,7 +107,7 @@ app.listen(port, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
 
-var Pool= new Pool(config); 
+var pool= new Pool(config); 
 app.get('/test-db',function (req,res) {
     pool.query('Select * from test',function (err,result) {
      if(err){
